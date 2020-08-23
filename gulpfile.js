@@ -43,7 +43,7 @@ function styles() {
 
 function images() {
     return src('app/images/src/**/*')
-        .pipe(newer('app/imafes/dest/'))
+        .pipe(newer('app/images/dest/'))
         .pipe(imagemin())
         .pipe(dest('app/images/dest'))
 }
